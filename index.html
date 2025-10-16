@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
 
-    </main>
-</body>
-<script src="script.js"></script>
+  <body>
+    <div id="search">
+      <form id="search-form">
+        <input id="search-city" type="text" placeholder="Ville" />
+        <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+        <input type="submit" hidden />
+      </form>
+      <select name="cities" id="cities"></select>
+      <form id="lalon-form">
+        <input name="latitude" id="latitude" type="number" step="0.0000001" placeholder="Latitude"/>
+        <input name="longitude" id="longitude" type="number" step="0.0000001" placeholder="Longitude" />
+        <input type="submit" hidden />
+      </form>
+    </div>
+    <div id="detail">
+      <p id="city"></p>
+      <img id="weather" />
+      <p id="temperature"></p>
+    </div>
+    <div id="geolocalisation">
+    </div>
+  </body>
 </html>
